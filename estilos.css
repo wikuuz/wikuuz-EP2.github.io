@@ -1,0 +1,227 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffc300;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.main-menu ul li {
+    border-radius: 10px; /* Añadido para redondear el menú */
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px; /* Añadido para redondear el menú */
+    transition: background-color 0.3s; /* Para una suave transición en el hover */
+}
+
+.main-menu ul li a:hover {
+    background-color: #fff;
+    color: #d32f2f;
+}
+
+/* Estilos para las promos (cuadros) */
+.main-content {
+    padding: 20px;
+}
+
+.promo-box {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores específicos de cada cuadro */
+.combo-mom {
+    background-color: #ffe599; /* Color del combo para mamá */
+}
+
+.combo-halloween {
+    background-color: #ffb347; /* Color del combo de Halloween */
+}
+
+/* Estilo para las imágenes de las promos */
+.promo-content {
+    display: flex; /* Aquí aplicamos flex para alinear imagen y texto en la misma fila */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.promo-box img {
+    width: 40%; /* Imagen ocupa el 40% del espacio */
+    border-radius: 8px;
+}
+
+/* Estilo para el texto de las promos */
+.promo-text {
+    width: 55%; /* Texto ocupa el 55% del espacio */
+}
+
+.promo-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promo-text p {
+    font-size: 16px;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #cc0000;
+}
+
+footer {
+    background-color: #333; /* Color de fondo negro */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centrar el texto y elementos en el footer */
+    position: relative; /* Permite el uso de posicionamiento absoluto dentro del footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center; /* Centrar los elementos */
+}
+
+/* Menú del pie de página */
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu ul li a:hover {
+    color: #ffb347;
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #ffb347;
+}
+
+/* Estilo para la imagen del libro de reclamaciones */
+.complaints-book {
+    position: absolute; /* Cambiado a posición absoluta para colocar la imagen en la esquina */
+    bottom: 10px; /* Espacio desde la parte inferior */
+    right: 10px; /* Espacio desde la derecha */
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos específicos para menu.html */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo de la página */
+}
+
+.menu-content {
+    padding: 20px;
+}
+
+.menu-section {
+    display: flex; /* Usar flexbox para disposición de menú */
+}
+
+.menu-text {
+    flex: 1; /* Columna izquierda más delgada */
+    margin-right: 20px; /* Espacio entre el texto y las imágenes */
+    padding: 10px; /* Espacio interno */
+    background-color: #ffffff; /* Fondo blanco para la descripción */
+    border: 2px solid #d00000; /* Borde rojo */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.menu-general {
+    margin-bottom: 10px; /* Espacio entre el encabezado y las imágenes */
+}
+
+.menu-images {
+    flex: 2; /* Columna derecha más ancha */
+    background-color: #fff5e6; /* Fondo suave para el cuadro de imágenes */
+    border: 2px solid #d00000; /* Borde rojo para el cuadro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+}
+
+/* Estilos para la cuadrícula de imágenes */
+.menu-grid {
+    display: grid; /* Usar grid para disposición de imágenes */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Colocar la imagen encima del texto */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 5px; /* Espacio interno */
+}
+
+.menu-img {
+    width: 120px; /* Tamaño de las imágenes */
+    height: 120px; /* Mantiene las imágenes cuadradas */
+    border-radius: 15px; /* Bordes redondeados para imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
